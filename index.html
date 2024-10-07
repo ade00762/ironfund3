@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ironfund - Landing page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+  <link rel="icon" href="https://icplspaco.com/wp-content/uploads/2019/05/cropped-favicon-32x32.png" sizes="32x32">  <style>
+    body {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .mx-auto:hover{
+      width: 1300px;
+      /* transition: all 1s ease-in-out; */
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+
+.chen:hover{
+  transition: all 1s ease-in-out;
+  color: #5cacea;
+}
+
+.chen{
+  transition: all 1s ease-in-out;
+  font-weight: bold;
+}
+
+.footer-section {
+    background-color: #f7f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .footer-section a {
+    text-decoration: none;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-section .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /* Ensuring all columns inside footer-section behave as blocks */
+  .footer-section .col-md-3 {
+    display: flex; /* Change to flex to make children flex items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the start of the column */
+    align-items: flex-start; /* Align items at the start of the column */
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 768px) {
+  .footer-section {
+    height: auto; /* Reset height for mobile */
+    padding-top: 30px; /* Adjust padding for mobile */
+    padding-bottom: 30px; /* Adjust padding for mobile */
+    min-height: 600px; /* Set a minimum height to ensure consistency */
+  }
+}
+
+    @media (max-width: 768px) {
+      .hr {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card-body a {
+        margin-right: 0 !important;
+      }
+      .footer-section .footer-section .col-md-3 {
+        margin-bottom: 20px;
+      }
+      .footer-logo{
+        margin-left: -100px;
+      }
+      .down{
+        margin-bottom: 130px;
+        position: relative;
+      }
+    }
+
+    .nav-link.active {
+      color: #5cacea !important;
+    }
+    
+  </style>
+</head>
+<body style="scroll-behavior: smooth;">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+   <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/images2/logo/Iron fund Logos.svg" width="230px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto text-t">
+          <li class="nav-item ">
+            <a class="nav-link chen d-block " href="#demo">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link chen d-block" href="#about">About Us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link chen d-block" href="#mission">Our Mission</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link chen d-block" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link chen d-block" href="#promoters">Iron Fund Team</a>
+            
+          </li>
+          
+           
+       
+          <!-- <li class="nav-item">
+            <a class="nav-link chen d-block" href="https://docsend.com/view/s/rbbbn9ehw6svvem6" target="_blank">Data Room</a>
+          </li> -->
+          <li class="nav-item dropdown ">
+            <div class="dropdown ">
+              <button class="dropbtn chen">Iron</button>
+              <div class="dropdown-content">
+                <a href="https://ironcapital.africa/" target="_blank" style="color: #922d27;">Iron Capital</a>
+                <a href="https://ironglobalmarkets.africa/" target="_blank" style="color: #161688;">Iron Global Markets</a>
+                <a href="https://ironwealth.africa/" target="_blank" style="color:#dba413;">Iron Wealth</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <section id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner text-t">
+      <div class="carousel-item active c-item">
+        <img src="images/slideshow2.png" alt="Chicago" class="d-block w-100 c-img">
+        <div class="carousel-caption top-0 my-5">
+          <h1 class="display-2 fw-bold ">On a mission to build Nigeria's most trusted and preferred investment bank</h1>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images/slideshow-2.jpg" alt="New York" class="d-block w-100 c-img">
+        <div class="carousel-caption my-5">
+          <h1 class="display-2 fw-bold" style="margin-bottom: 150px;">Different, differently.</h1>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images/slideshow4.png" alt="Los Angeles" class="d-block w-100 c-img">
+        <div class="carousel-caption">
+          <h1 class="display-2 fw-bold" style="margin-bottom: 150px;">Integrity <br /> Reputation <br> Competence</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="container" style="padding: 80px 0">
+    <h1 class="text-center fw-bold text-t" style=" color: #5cacea;" >About Us</h1>
+    <hr class="mx-auto" style="width: 100px;"/>
+    <div class="col-md-8 container text-justify section-title">
+      <p>Iron Fund Management Limited is a premier
+        investment management firm that provides
+        professional 
+       fund management services to
+        individuals, institutions, and corporations</p>
+      <p>We offer tailored investment solutions designed to
+        maximize returns while managing risk across a range
+        of asset classes, including equities, bonds, real
+        estate, and money markets</p>
+      <p>At Iron Fund, we partner with our clients to grow
+        and preserve their wealth across various asset
+        classes with consideration for future generations.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission" class="container-fluid " style="background-color: #fafafa; padding: 130px 0;">
+    <h1 class="container text-center fw-bold text-col text-t" >Our Mission</h1>
+    <hr class="mx-auto" style="width: 100px; color: #5cacea;" />
+    <p class="container text-center text-muted fs-5 text-f ">To build the most trusted and preferred investment bank in Nigeria.</p>
+
+    
+  </section>
+
+  <!-- Service 3 - Bootstrap Brain Component -->
+<section id="Services" class="py-xl-8"  style="padding: 130px 0;">
+    <div class="container " >
+      <div class="row justify-content-md-center">
+       
+              <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                <h1 class="container text-center fw-bold text-t " style=" color: #5cacea;" >Services</h1>
+                <p class=" mb-3 text-center lead fs-5 text-f">Iron Fund collaborates closely with you to understand your
+                    unique requirements and deliver tailored solutions that meet
+                    your objectives across our full range of services. </p>
+                <hr class="mx-auto mb-4" style="width: 100px; color: #5cacea" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="container-fluid">
+              <div class="row gy-3 gy-md-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-box-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
+                      </svg> -->
+                      <h4 class="mb-4">Investment Portfolio 
+                        Management </h4>
+                      <p class="mb-4 text-secondary">We manage investment portfolios
+                        for individuals, institutions, and
+                        corporate clients, focusing on
+                        maximizing returns while
+                        minimizing risks.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-capsule text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+                      </svg> -->
+                      <h4 class="mb-4">Wealth Management</h4>
+                      <p class="mb-4 text-secondary">We provide personalized financial
+                        planning and investment
+                        strategies for high-net-worth
+                        individuals, aimed at preserving
+                        and growing wealth over the long
+                        term.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-clipboard-check-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                      </svg> -->
+                      <h4 class="mb-4">Equity & Fixed Income</h4>
+                      <p class="mb-4 text-secondary">We manage investments in both
+                        the equity markets (stocks) and
+                        fixed-income securities (bonds) to
+                        achieve balanced risk-adjusted
+                        returns.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-diamond-half text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.5.5 0 0 1-.35.145z" /> -->
+                      </svg>
+                      <h4 class="mb-4">Asset Allocation and
+                        Diversification</h4>
+                      <p class="mb-4 text-secondary">We offer advice on asset
+                        allocation across various financial
+                        products like stocks, bonds, and
+                        real estate to meet the client's
+                        financial objectives..</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-eraser-fill text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z" /> -->
+                      </svg>
+                      <h4 class="mb-4">Alternative Investments</h4>
+                      <p class="mb-4 text-secondary">We Provide access to
+                        alternative asset classes such
+                        as private equity, hedge funds,
+                        real estate, venture capital, and
+                        commodities.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-front text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2z" /> -->
+                      </svg>
+                      <h4 class="mb-4">Risk Management and
+                        Diversification</h4>
+                      <p class="mb-4 text-secondary">We implement strategies to
+                        manage risk, including diversifying
+                        investments across sectors and
+                        markets to reduce exposure to
+                        any single asset class.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /> -->
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-front text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2z" />
+                      </svg> -->
+                      <h4 class="mb-4">Market Research and
+                        Analysis </h4>
+                      <p class="mb-4 text-secondary">We offer in-depth market
+                        research and financial analysis to
+                        inform investment decisions,
+                        helping clients capitalize on
+                        opportunities and avoid potential
+                        risks</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /> -->
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card h-100 border-line">
+                    <div class="card-body text-center p-4 p-xxl-5">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-front text-primary mb-4" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2z" />
+                      </svg> -->
+                      <h4 class="mb-4">Liquidity and Cash
+                        Management </h4>
+                      <p class="mb-4 text-secondary">We manage short-term
+                        investments and ensuring
+                        liquidity for clients, particularly
+                        institutions, to meet operational
+                        or emergency needs without
+                        sacrificing investment returns.</p>
+                      <!-- <a href="#!" class="btn btn-outline-primary bsb-btn-circle"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Promoters Section -->
+  <section id="promoters" class="container " style="padding: 10px 0;" >
+    <div>
+      <h1 class="text-center fw-bold text-t" style=" color: #5cacea;" >Board of Directors</h1>
+      <hr class="mx-auto" style="width: 100px; color: #000000;" />
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/jubrilenakele/" target="_blank">
+            <img class="card-img-top" src="./images/images2/Mr Jubril.png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Jubril Enakele</h4>
+            <!-- <p class="card-text text-justify text-f text-muted">Jubril has 25 years of African and European banking experience in Corporate Finance, Mergers, Acquisitions, Capital Markets and Commodity Derivates.</p>
+
+            <p class="card-text text-justify text-f text-muted">  An alumnus of Saïd Business School, London Business School, University College London and University of Calabar, Nigeria</p><br> -->
+            <!-- <a href="https://www.linkedin.com/in/jubrilenakele/" target="_blank" class="text-col mx-5 ">Read More</a> -->
+
+            <a href="https://www.linkedin.com/in/jubrilenakele/" target="_blank"> <h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/christine-doris-e-ulo-66209616/" target="_blank">
+            <img class="card-img-top" src="./images/images2/Doris.png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Doris Christine. E</h4>
+       
+            <!-- <a href="https://www.linkedin.com/in/otaobayomi/" target="_blank" class="text-col mx-5">Read More</a> -->
+           <a href="https://www.linkedin.com/in/christine-doris-e-ulo-66209616/" target="_blank"> <h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/adedeji-adekoya-b4a09419b/" target="_blank">
+            <img class="card-img-top" src="./images/images2/Adedeji.png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Adedeji Adekoya </h4>
+            <!-- <a href="https://www.linkedin.com/in/dayookusami/" target="_blank" class="text-col mx-5">Read More</a> -->
+            <a href="https://www.linkedin.com/in/adedeji-adekoya-b4a09419b/" target="_blank"><h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="promoters" class="container "  style=" margin-bottom: 130px;">
+    <div>
+      <h1 class="text-center fw-bold text-t" style=" color: #5cacea;" >Execution Team</h1>
+      <hr class="mx-auto" style="width: 100px; color: #5cacea;" />
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/oshoke-enakele-msc-mba-b9074529/" target="_blank">
+            <img class="card-img-top" src="./images/images2/Francis.png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Francis Enakele</h4>
+        
+            <!-- <a href="https://www.linkedin.com/in/jubrilenakele/" target="_blank" class="text-col mx-5 ">Read More</a> -->
+           <a href="https://www.linkedin.com/in/oshoke-enakele-msc-mba-b9074529/" target="_blank"> <h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/mary-abah-9152b23b/" target="_blank">
+            <img class="card-img-top" src="./images/images2/mary.png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Mary Abah</h4>
+         
+            <!-- <a href="https://www.linkedin.com/in/otaobayomi/" target="_blank" class="text-col mx-5">Read More</a> -->
+            <a href="https://www.linkedin.com/in/mary-abah-9152b23b/" target="_blank"><h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card">
+          <a href="https://www.linkedin.com/in/francis-nkem-1601a5165/" target="_blank">
+            <img class="card-img-top" src="./images/images2/nkem (1).png" alt="Card image">
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title text-t fw-bold ">Francis Nkem</h4>     
+            <!-- <a href="https://www.linkedin.com/in/dayookusami/" target="_blank" class="text-col mx-5">Read More</a> -->
+           <a href="https://www.linkedin.com/in/francis-nkem-1601a5165/" target="_blank"> <h4 class=" "><ion-icon name="logo-linkedin"></ion-icon></h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Room Section -->
+  
+ 
+
+  </section> 
+  <div class="mt-5 pt-5 pb-5 footer text-t  px-2 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company py-3">
+        <a href="" class="move-up">
+          <img src="images/images2/logo/iron fund logo white.png" style="width: 210px;" class="top-0 pb-3 " alt="">
+        </a class="pr-5 text-white-50">
+          <!-- <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p> -->
+        <div class="move-up">
+          <!-- <h4 class="mt-lg-0 mt-sm-3 copyright">Contact Info</h4> -->
+          <div class="text-white-50 col-md-7 col-sm-6">	<p>Iron Capital Partners Limited,<br />
+            5C(1) Adekunle Lawal Street, <br>Ikoyi, Lagos.</p> 
+          </div><br>
+          <a href="" class="text-white-50 move-up">+234 (0)704 000 6030 <br>+234 (0)1 454 0204</a>
+          
+          
+        </div>
+        </div>
+        <div class="col-lg-3 col-xs-12 links move-down m-right t-all">
+          <!-- <h4 class="mt-lg-0 mt-sm-3 copyright">Useful Links</h4> -->
+            <ul class="m-0 p-0 ">
+              <li><a href="#about" class="text-dec text-white-50">About US</a></li>
+              <li><a href="#mission" class="text-dec text-white-50 ">Our Mission</a></li>
+              <li><a href="#promoters" class="text-dec text-white-50 ">The & Promoters</a></li>
+              <li><a href="#Data-Room" class="text-dec text-white-50 ">Due Diligence</a></li>
+              <!-- <li><a href="https://docsend.com/view/s/rbbbn9ehw6svvem6" class="text-dec text-white-50 ">Data Room</a></li> -->
+              <li><a href="https://ironcapital.africa/" class="text-dec text-white-50 ">About Iron Capital</a></li>
+            </ul>
+        </div>
+        <!-- <div class="col-lg-4 col-xs-12 copyright location py-5">
+          <h4 class="mt-lg-0 mt-sm-4 ">Useful Links</h4>
+          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+        </div> -->
+      </div>
+      <div class="row mt-5">
+        <div class="col ">
+          <div>
+            <!-- Text -->
+            <p class="">
+              Copyright © 2024 <a href="#" class="copyright">Iron Fund Management</a></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+  <script>
+    // Wait for window load
+    window.onload = function () {
+      // Fade out the preloader div
+      setTimeout(function () {
+        document.getElementById('preloader').style.opacity = '0';
+        document.getElementById('preloader').style.visibility = 'hidden';
+      }, 100); // Adjust the time delay as needed (milliseconds)
+    };
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // Get all sections that have an ID defined
+    const sections = document.querySelectorAll("section[id]");
+
+    // Add an event listener listening for scroll
+    window.addEventListener("scroll", navHighlighter);
+
+    function navHighlighter() {
+      // Get current scroll position
+      let scrollY = window.pageYOffset;
+
+      // Now loop through sections to get height, top and ID values for each
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop -  500;
+        const sectionId = current.getAttribute("id");
+
+        // If our current scroll position enters the space where current section on screen is
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelector(".navbar-nav a[href*=" + sectionId + "]").classList.add("active");
+        } else {
+          document.querySelector(".navbar-nav a[href*=" + sectionId + "]").classList.remove("active");
+        }
+      });
+    }
+  });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
