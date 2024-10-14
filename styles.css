@@ -113,6 +113,10 @@ hr {
   height: 100%;
   object-fit: cover;
 }
+
+.my-10 {
+  margin-top: 13rem;
+}
 #spin {
   background-color: #5cacea;
   color: white;
