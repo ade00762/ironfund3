@@ -601,3 +601,15 @@ ul {
     min-height: 600px; /* Set a minimum height to ensure consistency */
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
