@@ -1,6 +1,9 @@
 body {
   scroll-behavior: smooth;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .c-item {
   height: 600px;
@@ -577,10 +580,9 @@ ul {
 .m-right {
   margin-left: 380px;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+}
 
- };
- 
 @media (max-width: 768px) {
   .m-right {
     margin-left: auto;
