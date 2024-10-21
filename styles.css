@@ -577,6 +577,10 @@ ul {
 .m-right {
   margin-left: 380px;
 }
+@media (min-width: 992px) { 
+
+ };
+ 
 @media (max-width: 768px) {
   .m-right {
     margin-left: auto;
