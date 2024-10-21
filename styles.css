@@ -584,7 +584,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .m-right {
+  /* .m-right {
     margin-left: auto;
     margin-right: auto;
     .your-flex-class {
@@ -594,7 +594,7 @@ ul {
 
     .t-all {
       text-align: start;
-    }
+    } */
 
     .your-flex-class {
       display: flex;
@@ -608,9 +608,6 @@ ul {
         min-height: 600px; /* Set a minimum height to ensure consistency */
       }
 
-      .m-right {
-        display: none;
-      }
     }
   }
-}
+
